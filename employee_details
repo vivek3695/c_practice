@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+struct details{
+    char name[50];
+    int basic_pay;
+    int tax;
+}emp[100];
+int main()
+{     int i, b=2;
+     struct details emp[100];
+    for(i=0;i<b;i++){
+       printf("enter\n");
+       scanf("%s",&emp[i].name);
+       scanf("%d",&emp[i].basic_pay);
+       scanf("%d",&emp[i].tax);
+    }
+    for(i=0;i<b;i++){
+       
+       printf("%s\n",emp[i].name);
+       printf("%d\n",emp[i].basic_pay);
+       printf("%d\n",emp[i].tax);
+    }
+    return 0;
+}
